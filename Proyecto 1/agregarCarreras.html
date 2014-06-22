@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/agregar.css">
+<link rel="stylesheet" type="text/css" href="css/tabmenu.css">
+
+<meta charset=utf-8 />
+<title>Agregar Carrera</title>
+</head>
+<body>
+<div id="salir">
+        <a id="salir" href="index.html"><img src="imagenes/exitHover.png"></a>
+        <p id="salir"> Hola Admin</p>       
+    </div>
+    <div id="perfil">
+                <img class="logo" src="imagenes/UTN.png">
+            </div>
+            <p id="perfil">Perfiles</p>
+            <a id="dashboard" href="admin.html">Dashboard</a>
+            <p id="dashboard"><strong>></strong></p>
+            <p id="ubicado">Agregar Carrera</p>
+    <form action="agregarCarrera.php" method="post">
+    <div class="Contenido">
+    		<label>Código</label><br />
+           <input type="texto" value="" placeholder="Código" name="codigo"><br /><br />
+
+           <label>Nombre</label><br />
+           <input type="texto" value="" placeholder="Nombre" name="nombre"><br /><br />
+
+           <label>Duración</label><br />
+           <input type="texto" value="" placeholder="Duración" name="duracion"><br /><br />
+
+           <label>Horario</label><br />
+           <input type="texto" value="" placeholder="Horario" name="horario"><br /><br />
+
+           <label>Nivel de Titulo</label><br />
+           <input type="texto" value="" placeholder="Nivel de Titulo" name="titulo"><br /><br />
+
+           <label>Sede</label><br />
+           <input type="texto" value="" placeholder="Sede" name="sede"><br /><br />
+
+           <a  href="carreras.html" onclick="agregarCarrera()"><input type="submit" id="editar" name="editar" value="Agregar" target='_blank'></a>
+
+           <a href="carreras.html"><input type="button" id="cancelar" name="cancelar" value="Cancelar" target='_blank'></a>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+input{
+	width: 25%;
+	min-height: 17px;
+	margin: 2% 0% 0% 7%;
+	float:left;
+}
+
+#foto{
+	background:red;
+	border: 1px;
+	width: 21%;
+	min-height: 123px;
+	margin: 1% 0% 0% 108%;
+	float: left;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/agregar.css">
+<link rel="stylesheet" type="text/css" href="css/tabmenu.css">
+<script type="text/javascript" src="css/util.js"></script>
+<meta charset=utf-8 />
+<title>Agregar Estudiante</title>
+</head>
+<body>
+<div id="salir">
+        <a id="salir" href="index.html"><img src="imagenes/exitHover.png"></a>
+        <p id="salir"> Hola Admin</p>       
+    </div>
+    <div id="perfil">
+                <img class="logo" src="imagenes/UTN.png">
+            </div>
+            <p id="perfil">Perfiles</p>
+            <a id="dashboard" href="admin.html">Dashboard</a>
+            <p id="dashboard"><strong>></strong></p>
+            <p id="ubicado">Agregar Estudiante</p>
+   <form action="agregarEstudiante.php" method="post">
+    <div class="Contenido">
+    		<label for="cedula">Cédula</label>
+           <input type="texto" value="" placeholder="Cédula" name="cedula" id="cedula"><br /><br />
+
+           <label>Nombre</label>
+           <input type="texto" value="" placeholder="Nombre" name="nombre"><br /><br />
+
+           <label>Apellidos</label>
+           <input type="texto" value="" placeholder="Apellidos" name="apellidos"><br /><br />
+
+           <label>Teléfono</label>
+           <input type="texto" value="" placeholder="Teléfono" name="telefono"><br /><br />
+
+           <label>Correo</label>
+           <input type="email" value="" placeholder="Correo" name="correo"><br /><br />
+
+           <label>Dirección</label>
+           <input type="texto" value="" placeholder="Dirección" name="direccion"><br /><br />
+
+           <label>Carrera</label>
+           <input type="texto" value="" placeholder="Carrera" name="carrera"><br /><br />
+
+           <label>Ingles</label>
+           <input type="texto" value="" placeholder="ingles" name="ingles"><br /><br />
+
+           <label>Skill</label>
+           <input type="texto" value="" placeholder="Skill" name="skill"><br /><br />
+
+           <label>Proyecto</label>
+           <input type="texto" value="" placeholder="Proyecto" name="proyecto"><br /><br />
+
+           <label>Curso</label>
+           <input type="texto" value="" placeholder="Curso" name="curso"><br /><br />
+
+           <label>Duracion</label>           
+           <input type="texto" value="" placeholder="Duracion" name="duracion"><br /><br />
+
+           <label>Tecnologia</label>
+           <input type="texto" value="" placeholder="Tecnologia" name="tecnologia"><br /><br />
+
+           <label>Descripcion</label>
+           <input type="texto" value="" placeholder="Descripcion" name="descripcion"><br /><br />
+
+           <label>Fecha</label>
+           <input type="texto" value="" placeholder="Fecha" name="fecha"><br /><br />
+
+           <label>Calificacion</label>
+           <input type="texto" value="" placeholder="Calificacion" name="calificacion"><br /><br />
+
+           <label>Comentario</label>
+           <input type="texto" value="" placeholder="Comentario" name="comentario"><br /><br />
+
+           <label>Foto</label>
+            <input type="file" name="foto" value="Examinar..">
+            
+          
+           <a href="estudiante.php" ><input type="submit" id="editar" name="editar" value="Agregar" target='_blank'></a><br /><br />
+
+           <a href="carreras.html"><input type="button" id="cancelar" name="cancelar" value="Cancelar" target='_blank'></a><br /><br />
+    </div>
+    </form>
+</body>
+</html>
