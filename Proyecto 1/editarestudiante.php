@@ -15,7 +15,7 @@
 </head>
 <body> 
     <div class="conteiner">
-        <div id="myModal" class="reveal-modal" style="width:31%; height:59%;">
+        <div id="myModal" class="reveal-modal" style="width:46%; height:74%;">
     <form action="editarEstudianteFinal.php" method="post">
      <?php
                 $traer = $_POST['edit'];

@@ -48,8 +48,6 @@
                     <td>Cedula</td>
                     <td>Nombre</td>
                     <td>Apellidos</td>
-                    <td>Teléfono</td>
-                    <td>Correo</td>
                     <td>Carrera</td>
                     <td>Opciones</td>
                 </tr>
@@ -67,10 +65,7 @@
                <input type="hidden" name="edit" id="edit">
            </form>
 
-           <form action="datoEstudiante.php" method="post" id="formularioVerEstudiante">
-                <input type="hidden" name="estudiante" id="estudiante">
-           </form>
-    </div>
+
 </div>    
 </body>
 </html>

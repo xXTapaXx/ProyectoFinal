@@ -65,10 +65,8 @@ while ($row=mysql_fetch_array($datos)) { //Bucle para ver todos los registros
         echo "<tr>";
         echo $foto = "<td><img src=".$row['foto']." class='imgTable'></td>";
         echo $cedula = "<td>".$row['cedula']."</td>";
-        echo $nombre = "<td><a class='estudiante' href='javascript:verEstudiante(".$row['cedula'].")'></a>".$row['nombre']."</td>";
-        echo $apellidos = "<td>".$row['apellidos']."</td>";
-        echo $telefono = "<td>".$row['telefono']."</td>";
-        echo $correo = "<td>".$row['correo']."</td>";   
+        echo $nombre = "<td>".$row['nombre']."</a></td>";
+        echo $apellidos = "<td>".$row['apellidos']."</td>";  
         echo $carrera = "<td>".$row['carrera']."</td>";      
         echo $opciones = "<td><a href='javascript:editarEstudiante(".$row['cedula'].")'><img src='imagenes/edit.png'/></a>
         <a href='javascript:eliminarEstudiante(".$row['cedula'].")' ><img class='opciones' src='imagenes/delete.png' /></a></td>";

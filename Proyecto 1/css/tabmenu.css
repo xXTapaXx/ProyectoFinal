@@ -9,7 +9,7 @@ body{
 /*Tab Menu*/
 #navbar {
 	width:88%;
-	margin: 5% 0% 0% 10%;
+	margin: 5% 0% 0% 2%;
   float: left;
 	
 }
@@ -18,8 +18,8 @@ body{
 #navbar #holder{
 	height:64px;
 	border-bottom:1px solid #000;
-	width:57%;
-	padding-left:54px;
+	width:107%;
+	padding-left:0px;
 }
 
 
@@ -78,13 +78,15 @@ body{
 
 /*Link de Salir de admin*/
 a#salir{
+  position:absolute;
   float: left;
-  margin: 2% 0% 0% 2%;
+  margin: 2% 0% 0% 29%;
   
 }
 
 /*Link del Dashboard*/
 a#dashboard{
+  width:32%;
   float: left;
   margin: 6% 60% 0% 12%;
   font-size: 1em;
@@ -113,8 +115,9 @@ img.verEstudiante{
 
 /*Texto de Salir que dice Hola Admin*/
 p#salir{
+  position:absolute;
   float: left;
-  margin: 2% 0% 0% 49%;
+  margin: 2% 0% 0% 51%;
   font-family: "Arial Black", Gadget, sans-serif;
 }
 
@@ -149,11 +152,11 @@ p#ubicado{
 /*Div donde se encuentra los datos que necesitamos debajo del tab Menu*/
 div.tabContent{
   float:left;
-  margin: 2% 0% 0% 9%;
+  margin: 0% 0% 0% 0%;
   border: 1px solid#000;
   padding: 5px;
   padding-right: 29%;
-  width: 41%;
+  width: 68%;
   box-shadow: 6px 15px 0px 10px rgba(6,6,6,.6);
   -webkit-border-radius: 14px;  
 }
@@ -179,8 +182,8 @@ input{
 /*Imagen de UTN*/
 img.logo{
   float: left;
-  margin:3% 0% 0% 13%;
-  width:8%;
+  margin:6% 0% 0% 13%;
+  width:10%;
 }
 
 /*Imagen de Editar y Eliminar dentro del table*/
@@ -191,7 +194,7 @@ img.opciones{
 
 /*Imagen de agregar Carrera, Estudiante y Usuario*/
 img.agregar{
-  margin: 0% 0% 0% 160%;
+  margin: 0% 0% 0% 130%;
 
 }
 img.imgTable{
@@ -200,12 +203,12 @@ img.imgTable{
 
 img.buscar{
   float: left;
-  margin: 0% 0% 0% 158%;
+  margin: 0% 0% 0% 131%;
 }
 
 /*Table*/
 table{ 
-  width:144%;
+  width:124%;
   border-spacing: 0px;
   border-color: #000;
   text-align:center;

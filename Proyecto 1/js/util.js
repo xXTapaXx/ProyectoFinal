@@ -43,9 +43,15 @@ function eliminarEstudiante(cedula){
 
 
   function verEstudiante(cedula){
-         $("#datoEstudiante").val(cedula);
-         $('#formularioVerEstudiante').submit();
-   
+     var r=confirm("¿Esta Seguro que desea eliminar este Estudiante?");
+
+    if(r==true){
+         $("#estudiante").val(cedula);
+         $('#verEstudiante').submit();
+    }
+    else{
+      header("Location: estudiante.php"); 
+    }
   }
 
 //Agregar, Editar y Eliminar Usuario
@@ -76,6 +82,8 @@ function eliminarUsuario(id){
   function buscar(){
      $('#formularioBuscar').submit();
   }
+
+ 
 
 
 
