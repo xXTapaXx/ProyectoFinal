@@ -2,22 +2,25 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/tabmenu.css">
-<script type="text/javascript" src="css/util.js"></script>
-<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
 <meta charset=utf-8 />
 <title>Carreras</title>
 </head>
 <body>
+<div class="conteiner">
+         <img class="logo" src="imagenes/UTN.png">
+        <p id="perfil">Perfiles</p>
 
+        <p id="salir"> Hola Admin</p> 
         <a id="salir" href="index.html"><img src="imagenes/exitHover.png"></a>
-           <p id="salir"> Hola Admin</p>    
 
-                <img class="logo" src="imagenes/UTN.png">
+           
+            
+            <a id="dashboard" href="admin.html">Dashboard <strong> > Carreras</strong></a>
+            
+            
 
-            <p id="perfil">Perfiles</p>
-            <a id="dashboard" href="admin.html">Dashboard</a>
-            <p id="dashboard"><strong>></strong></p>
-            <p id="ubicado">Carreras</p>
   <div id="navbar">
     <div id="holder">
     <ul>
@@ -39,9 +42,6 @@
                 <tr>
                     <td>Código</td>
                     <td>Nombre</td>
-                    <td>Duración</td>
-                    <td>Horario</td>
-                    <td>Nivel de Titulo</td>
                     <td>Sedes</td>
                     <td>Opciones</td>
                 </tr>
@@ -49,8 +49,7 @@
              <?php
                 include("prueba.php");
                 $con = new conexion();
-                $con->traerCarrera();
-                
+                $con->traerCarrera(); 
              ?>
              
            
@@ -63,7 +62,7 @@
                <input type="hidden" name="edit" id="edit">
            </form>
     </div>
-    
+</div>   
 </body>
 </html>
 

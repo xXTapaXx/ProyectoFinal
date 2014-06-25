@@ -7,13 +7,12 @@
     $id= $_POST['id'];
     $usuario= $_POST['usuario'];
     $contrasenna= $_POST['contrasenna'];
-    $telefono= $_POST['telefono'];
-    $correo= $_POST['correo'];
-    $direccion= $_POST['direccion'];
+    $nombre= $_POST['nombre'];
+    $role= $_POST['role'];
     $edit = $_POST['edit'];
 
 
-    $insertar = @mysql_query("update usuario set id='$id', usuario='$usuario', contrasenna='$contrasenna', telefono ='$telefono',correo ='$correo',direccion='$direccion' where id='$edit'");
+    $insertar = @mysql_query("update usuario set id='$id', usuario='$usuario', contrasenna='$contrasenna', nombre ='$nombre',role ='$role' where id='$edit'");
     header("Location:usuario.php");
    
 

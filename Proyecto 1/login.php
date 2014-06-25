@@ -22,7 +22,14 @@
 
 	 }
 	 else{
-		 echo "Error y/o contraseña incorrecta";
+		 //echo "<script type='text/javascript'>alert('Error y/o contraseña incorrecta')
+		 //header('Location:index.html');</script>";
+
+		echo "<script>";
+		echo "alert('Error y/o contraseña incorrecta');";  
+		echo "window.location = 'index.html';";
+		echo "</script>";  
+		 
 	}
 		
 

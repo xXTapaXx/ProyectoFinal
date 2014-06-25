@@ -2,22 +2,21 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/tabmenu.css">
-<script type="text/javascript" src="css/util.js"></script>
-<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <meta charset=utf-8 />
 <title>Usuarios</title>
 </head>
 <body>
+<div class="conteiner">
+        <img class="logo" src="imagenes/UTN.png">
+        <p id="perfil">Perfiles</p>
+
+        <p id="salir"> Hola Admin</p> 
         <a id="salir" href="index.html"><img src="imagenes/exitHover.png"></a>
-        <p id="salir"> Hola Admin</p>       
-        
 
-                <img class="logo" src="imagenes/UTN.png">
+           <a id="dashboard" href="admin.html">Dashboard <strong> > Usuario</strong></a>
 
-            <p id="perfil">Perfiles</p>
-            <a id="dashboard" href="admin.html">Dashboard </a>
-            <p id="dashboard"><strong>></strong></p>
-            <p id="ubicado">Usuarios</p>
   <div id="navbar">
     <div id="holder">
     <ul>
@@ -38,11 +37,10 @@
             <thead>
                 <tr>
                     <td>ID</td>
+                    <td>Nombre</td>
                     <td>Usuario</td>
-                    <td>Contraseña</td>
-                    <td>Teléfono</td>
-                    <td>Correo</td>
-                    <td>Dirección</td>
+                    <td>Contrasenna</td>
+                    <td>Role</td>
                     <td>Opciones</td>
                 </tr>
                 </thead>
@@ -60,5 +58,6 @@
                <input type="hidden" name="editid" id="editid">
            </form>
     </div>
+</div>    
 </body>
 </html>

@@ -2,23 +2,25 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/tabmenu.css">
-<script type="text/javascript" src="css/util.js"></script>
-<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 <meta charset=utf-8 />
 <title>Estudiantes</title>
 
 </head>
 <body>
+<div class="conteiner">
+
+        <img class="logo" src="imagenes/UTN.png">
+        <p id="perfil">Perfiles</p>
+
+        <p id="salir"> Hola Admin</p> 
         <a id="salir" href="index.html"><img src="imagenes/exitHover.png"></a>
-        <p id="salir"> Hola Admin</p>       
+              
 
+     
+            <a id="dashboard" href="admin.html">Dashboard <strong> > Estudiante</strong></a>
 
-                <img class="logo" src="imagenes/UTN.png">
-
-            <p id="perfil">Perfiles</p>
-            <a id="dashboard" href="admin.html">Dashboard</a>
-            <p id="dashboard"><strong>></strong></p>
-            <p id="ubicado">Estudiantes</p>
     <div id="navbar">       
     <div id="holder">
     <ul>
@@ -33,7 +35,7 @@
 
     <div class="tabContent">
 
-         <p>Listado de Carreras</p> 
+         <p>Listado de Carreras</p><hr />
 
          <a href="agregarEstudiante.html"><img class="agregar" src="imagenes/agregar.png"/></a>         
               
@@ -42,12 +44,13 @@
             <table border="1px">
             <thead>
                 <tr>
+                    <td>Foto</td>
                     <td>Cedula</td>
                     <td>Nombre</td>
                     <td>Apellidos</td>
                     <td>Teléfono</td>
                     <td>Correo</td>
-                    <td>Direccion</td>
+                    <td>Carrera</td>
                     <td>Opciones</td>
                 </tr>
                 </thead>
@@ -63,6 +66,11 @@
             <form  action="editarEstudiante.php" method="post" id="formularioEditarEstudiante">
                <input type="hidden" name="edit" id="edit">
            </form>
+
+           <form action="datoEstudiante.php" method="post" id="formularioVerEstudiante">
+                <input type="hidden" name="estudiante" id="estudiante">
+           </form>
     </div>
+</div>    
 </body>
 </html>

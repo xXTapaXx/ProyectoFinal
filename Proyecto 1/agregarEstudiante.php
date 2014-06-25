@@ -23,8 +23,7 @@
 	$fecha =  $_POST['fecha'];
 	$calificacion =  $_POST['calificacion'];
 	$comentario =  $_POST['comentario'];
-	
-	echo $nombre,$apellidos,$telefono,$correo,$direccion,$foto,$carrera,$ingles,$skill,$proyecto,$curso,$duracion,$tecnologia,$descripcion,$fecha,$calificacion,$comentario,$cedula;
+
 
 	  $archivo = $_FILES['foto']['tmp_name'];
         $destino = "imagenes/".$_FILES['foto']['name'];
@@ -35,12 +34,21 @@
 		echo 'El estudiante'.$cedula.'ya existe.';
 	}else{
 		
-	$insertar = @mysql_query("insert into estudiante (cedula,nombre,apellidos,telefono,correo,direccion,foto,carrera,ingles,skill,curso,duracion,
+	$insertar = @mysql_query("insert into estudiante (cedula,nombre,apellidos,telefono,correo,direccion,foto,carrera,ingles,skill,proyecto,curso,duracion,
 		tecnologia,descripcion,fecha,calificacion,comentario)
-		values( '$cedula','$nombre','$apellidos','$telefono','$correo','$direccion','$destino$foto','$carrera','$ingles','$skill','$curso','$duracion',
+		values( '$cedula','$nombre','$apellidos','$telefono','$correo','$direccion','$destino$foto','$carrera','$ingles','$skill','$proyecto','$curso','$duracion',
 		'$tecnologia','$descripcion','$fecha','$calificacion','$comentario')");
-		echo "<h4 class= 'alert_success'>Estudiante agregado Exitosamente</h4>";
-	header("Location:estudiante.php");
+	if($_REQUEST['agregarNuevo']==TRUE){
+		echo "<script>";
+		echo "alert('Estudiante agregado Exitosamente');";  
+		echo "window.location = 'agregarestudiante.html';";
+		echo "</script>";
+} else {
+		echo "<script>";
+		echo "alert('Estudiante agregado Exitosamente');";  
+		echo "window.location = 'estudiante.php';";
+		echo "</script>"; 
+	}	
 }
 
 ?>

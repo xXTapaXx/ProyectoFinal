@@ -8,9 +8,8 @@
 	$id =  $_POST['id'];
 	$usuario =  $_POST['usuario'];
 	$contrasenna =  $_POST['contrasenna'];
-	$telefono =  $_POST['telefono'];
-	$correo =  $_POST['correo'];
-	$direccion =  $_POST['direccion'];
+	$nombre =  $_POST['nombre'];
+	$role =  $_POST['role'];
 
 	
 
@@ -19,8 +18,11 @@
 		echo 'El usuario'.$usuario.'ya existe.';
 	}else{
 		
-	$insertar = @mysql_query("insert into usuario (id,usuario,contrasenna,telefono,correo,direccion) values( '$id','$usuario','$contrasenna','$telefono','$correo','$direccion')");
-	header("Location:usuario.php");
+	$insertar = @mysql_query("insert into usuario (id,usuario,contrasenna,nombre,role) values( '$id','$usuario','$contrasenna','$nombre','$role')");
+	echo "<script>";
+		echo "alert('Usuario agregado Exitosamente');";  
+		echo "window.location = 'usuario.php';";
+		echo "</script>"; 
 }
 
 ?>
